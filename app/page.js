@@ -22,7 +22,7 @@ export default async function Home() {
       <Slider />
       <Heroicons />
 
-      <LatestProducts />
+      <LatestProducts products={products} />
       <LatestOffers />
       <BestSellers products={products} />
       <FeaturedProducts products={products} />

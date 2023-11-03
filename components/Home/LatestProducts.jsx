@@ -4,7 +4,8 @@ import Container from "../layout_components/Container";
 import { AiFillStar, AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
 import { BsFilterLeft, BsFillCartPlusFill } from "react-icons/bs";
 import ProductCard from "./ProductCard";
-const LatestProducts = () => {
+import Link from "next/link";
+const LatestProducts = ({ products }) => {
   // Timer code
   const Ref = useRef(null);
   const [timer, setTimer] = useState("24:00:00");
@@ -81,102 +82,6 @@ const LatestProducts = () => {
       {digit}
     </span>
   ));
-  // Latest product array
-  const productCard = [
-    {
-      image: <img src="./Metress.jpg" alt="Image1" />,
-      name: "Pillow 70x70",
-      price: "$ 2900",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image2" />,
-      name: "Single Mattress 80x200",
-      price: "$ 45,500",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image3" />,
-      name: "Cover",
-      price: "$ 9,750",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image4" />,
-      name: "Red PVC electrical tape",
-      price: "$ 295",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image5" />,
-      name: "Black electrical tape",
-      price: "$ 455",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image6" />,
-      name: "Saw blade",
-      price: "$ 8,250",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image7" />,
-      name: "Bolt M24x200",
-      price: "$ 1,424",
-    },
-    {
-      image: <img src="./Bolt.png" alt="Image8" />,
-      name: "Stainless steel bolt M24",
-      price: "$ 440",
-    },
-  ];
-  // Featured products array
-  const productCard1 = [
-    {
-      image: <img src="./Metress.png" alt="Image1" />,
-      name: "Pillow 70x70",
-      price: "$ 2900",
-    },
-    {
-      image: <img src="./Metress.png" alt="Image2" />,
-      name: "Single Mattress 80x200",
-      price: "$ 45,500",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image3" />,
-      name: "Cover",
-      price: "$ 9,750",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image4" />,
-      name: "Red PVC electrical tape",
-      price: "$ 295",
-    },
-    {
-      image: <img src="./Blacktape.png" alt="Image5" />,
-      name: "Black electrical tape",
-      price: "$ 455",
-    },
-    {
-      image: <img src="./Metress.jpg" alt="Image6" />,
-      name: "Saw blade",
-      price: "$ 8,250",
-    },
-    {
-      image: <img src="./Bolt.png" alt="Image7" />,
-      name: "Bolt M24x200",
-      price: "$ 1,424",
-    },
-    {
-      image: <img src="./Bolt.png" alt="Image8" />,
-      name: "Stainless steel bolt M24",
-      price: "$ 440",
-    },
-    {
-      image: <img src="./Bolt.png" alt="Image8" />,
-      name: "Stainless steel bolt M24",
-      price: "$ 440",
-    },
-    {
-      image: <img src="./Bolt.png" alt="Image8" />,
-      name: "Stainless steel bolt M24",
-      price: "$ 440",
-    },
-  ];
   return (
     <div className="my-6">
       <Container>
@@ -248,8 +153,10 @@ const LatestProducts = () => {
             </h3>
             <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4">
               {/* mapping  */}
-              {productCard.map((product, i) => (
-                <ProductCard product={product} />
+              {products?.products?.slice(0, 8).map((product, i) => (
+                <Link href={`/${product?.id}`}>
+                  <ProductCard product={product} />
+                </Link>
               ))}
             </div>
           </div>

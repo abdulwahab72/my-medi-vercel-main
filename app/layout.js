@@ -6,7 +6,7 @@ import Footer from "@/components/layout_components/Footer";
 import { Jost } from "next/font/google";
 
 export const metadata = {
-  title: "MY MEDI",
+  title: "Jurhy",
   description: "this is an ecommerce website for medical related products",
 };
 

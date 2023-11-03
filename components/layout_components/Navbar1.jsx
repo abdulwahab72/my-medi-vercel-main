@@ -24,7 +24,7 @@ export const Navbar1 = () => {
           <Link href="/">
             <div className="lg:mr-4 mr-0 xl:mr-0">
               <Image
-                src="/logo.png"
+                src="/log.png"
                 height={200}
                 width={200}
                 alt="Logo"

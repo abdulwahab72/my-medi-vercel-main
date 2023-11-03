@@ -1,5 +1,4 @@
 import About_Banner from "@/components/about/About_Banner";
-import About_footer from "@/components/about/About_footer";
 import Description1 from "@/components/about/Description1";
 import Description2 from "@/components/about/Description2";
 import Description3 from "@/components/about/Description3";
@@ -20,7 +19,6 @@ const About = () => {
         <Description2 />
         <Description3 />
         <Description4 />
-        <About_footer />
       </Container>
     </div>
   );

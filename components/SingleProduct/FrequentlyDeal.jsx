@@ -11,7 +11,7 @@ const FrequentlyDeal = () => {
         <div className="md:flex">
           <div className=" flex justify-center my-2 md:p-[15px]">
             <img
-              src="./bolt.png"
+              src="./Bolt.png"
               alt="bolt"
               className="w-[120px] h-[120px] md:w-[151px] md:h-[151px] lg:w-[215px] lg:h-[215px] "
             />
@@ -23,7 +23,7 @@ const FrequentlyDeal = () => {
           </div>
           <div className=" flex justify-center my-2 md:p-[15px]">
             <img
-              src="./bolt.png"
+              src="./Bolt.png"
               alt="bolt"
               className="w-[120px] h-[120px] md:w-[151px] md:h-[151px] lg:w-[215px] lg:h-[215px]"
             />
@@ -35,7 +35,7 @@ const FrequentlyDeal = () => {
           </div>
           <div className=" flex justify-center my-2 md:p-[15px]">
             <img
-              src="./bolt.png"
+              src="./Bolt.png"
               alt="bolt"
               className="w-[120px] h-[120px] md:w-[151px] md:h-[151px] lg:w-[215px] lg:h-[215px]"
             />
@@ -47,7 +47,7 @@ const FrequentlyDeal = () => {
           </div>
           <div className=" flex justify-center my-2 md:p-[15px]">
             <img
-              src="./bolt.png"
+              src="./Bolt.png"
               alt="bolt"
               className="w-[120px] h-[120px] md:w-[151px] md:h-[151px] lg:w-[215px] lg:h-[215px]"
             />

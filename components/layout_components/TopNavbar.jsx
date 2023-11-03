@@ -28,9 +28,11 @@ const TopNavbar = () => {
             <div className="text-[12px] px-6 border-r-[1px] hover:text-[#ff9923]">
               <p>Blog</p>
             </div>
-            <div className="text-[12px] px-6 border-r-[1px] hover:text-[#ff9923]">
-              <p>Contact</p>
-            </div>
+            <Link href="/contact">
+              <p className="text-[12px] px-6 border-r-[1px] hover:text-[#ff9923]">
+                Contact
+              </p>
+            </Link>
             {/* icons */}
             <div className="flex text-[15px] px-6 border-r-[1px] gap-4">
               <BiLogoFacebook className="hover:text-orange-500  delay-100 cursor-pointer" />
